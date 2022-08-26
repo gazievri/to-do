@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import { Header } from './layout/Header';
+import { Main } from './layout/Main';
+import { Footer } from './layout/Footer';
 
 function App() {
+  const [isNight, setIsNight] = useState(
+    JSON.parse(localStorage.getItem('theme'))
+      ? JSON.parse(localStorage.getItem('theme'))
+      : false
+  );
+
+  const handleSwitchTheme = () => {
+    setIsNight(!isNight);
+  };
+
+  useEffect(() => {
+    const userTheme = JSON.stringify(isNight);
+    localStorage.setItem('theme', userTheme);
+  }, [isNight]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header isNight={isNight} />
+      <Main handleSwitchTheme={handleSwitchTheme} isNight={isNight} />
+      <Footer isNight={isNight} />
     </div>
   );
 }

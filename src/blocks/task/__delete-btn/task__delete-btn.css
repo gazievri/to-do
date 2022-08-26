@@ -1,0 +1,14 @@
+.task__delete-btn {
+    background-image: url('../../../images/trash-bin.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    margin-left: 10px;
+}
+
+.task__delete-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

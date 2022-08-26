@@ -1,0 +1,4 @@
+.task___text_status_complete {
+    text-decoration: line-through;
+    color: rgb(193, 196, 195);
+}

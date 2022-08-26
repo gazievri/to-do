@@ -1,0 +1,14 @@
+.task__edit-btn {
+    background-image: url('../../../images/profile-edit-button.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    margin-left: auto;
+}
+
+.task__edit-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

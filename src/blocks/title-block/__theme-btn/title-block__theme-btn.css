@@ -1,0 +1,15 @@
+.title-block__theme-btn {
+    margin-left: auto;
+    background-image: url('../../../images/theme-switcher.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    color: whitesmoke;
+}
+
+.title-block__theme-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
