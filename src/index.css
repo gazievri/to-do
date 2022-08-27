@@ -18,9 +18,8 @@
 @import url('./blocks/task/__text/_status_complete/task__text_status_complete.css');
 @import url('./blocks/task/__text-edit-input/task__text-edit-input.css');
 
-@import url('./blocks/footer/footer.css');
-@import url('./blocks/footer/_night-theme_active/footer__night-theme_active.css');
 @import url('./blocks/header/_night-theme_active/header__night-theme_active.css');
 @import url('./blocks/list-tasks/_night-theme_active/list-tasks_night-theme_active.css');
 @import url('./blocks/new-task/__input/_night-theme/new-task__input_night-theme_active.css');
 @import url('./blocks/task/__text-edit-input/_night-theme/task__text-edit-input_night-theme_active.css');
+@import url('./blocks/body/_night-theme/body_night-theme_active.css');

@@ -1,9 +1,10 @@
 .main {
-    width: 50%;
-    min-height: 60rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -25%;
-    top: 15rem;
+    width: 40%;
+    margin: -250px auto 110px;
+    z-index: 5;
+    
+    top: 12rem;
     padding: 5px;
+    min-width: 320px;
 }
+

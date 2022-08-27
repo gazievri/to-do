@@ -1,6 +1,6 @@
 .task__text-edit-input {
     border: none;
-    border-bottom: 1px solid red;
+    border: 1px dotted black;
     background-color: whitesmoke;
     padding: 0;
     margin: 0 0 0 10px;
