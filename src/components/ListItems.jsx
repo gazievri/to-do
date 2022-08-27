@@ -1,6 +1,6 @@
 import { Item } from './Item';
 
-const ListItems = ({ listItems, handleDeleteItem, isNight }) => {
+const ListItems = ({ listItems, handleDeleteItem, isNight, handleCompleteStatusUpdate }) => {
   return (
     <ul className={`list-tasks ${isNight && 'list-tasks_night-theme_active'}`}>
       {listItems.map((el) => (
@@ -9,6 +9,7 @@ const ListItems = ({ listItems, handleDeleteItem, isNight }) => {
           item={el}
           handleDeleteItem={handleDeleteItem}
           isNight={isNight}
+          handleCompleteStatusUpdate={handleCompleteStatusUpdate}
         />
       ))}
     </ul>

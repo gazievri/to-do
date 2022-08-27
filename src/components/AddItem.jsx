@@ -13,7 +13,7 @@ const AddItem = ({ handleClickAdd, isNight }) => {
     if (e.key === 'Enter' && value.length > 0) {
       setValue('');
       const task = {
-        status: true,
+        status: false,
         text: value,
         // ID генерируется через дату (используется время создания задачи). Это обеспечивает уникальность id
         id: Number(new Date().getTime()),

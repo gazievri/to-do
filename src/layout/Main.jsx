@@ -20,6 +20,17 @@ const Main = ({ handleSwitchTheme, isNight }) => {
     setListItems(newList);
   };
 
+  // Обработчик сохранения статуса Исполненно
+  const handleCompleteStatusUpdate = (item) => {
+    const newList = listItems.map(el => {
+      if (el.id === item.id) {
+        el.status = item.status;
+      };
+      return el;
+    })
+    setListItems(newList);
+  }
+
   // Записывает в LocalStorage обновленный массив с задачами при его изменении. Пустой массив не записывает. 
   useEffect(() => {
     if (listItems.length > 0) {
@@ -38,11 +49,12 @@ const Main = ({ handleSwitchTheme, isNight }) => {
   return (
     <div className="main">
       <Title handleSwitchTheme={handleSwitchTheme} />
-      <AddItem handleClickAdd={handleAddItem} isNight={isNight} />
+      <AddItem handleClickAdd={handleAddItem} isNight={isNight}  />
       <ListItems
         listItems={listItems}
         handleDeleteItem={handleDeleteItem}
         isNight={isNight}
+        handleCompleteStatusUpdate={handleCompleteStatusUpdate}
       />
     </div>
   );

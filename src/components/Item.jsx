@@ -1,17 +1,18 @@
 import { useState } from 'react';
 
-const Item = ({ item, handleDeleteItem, isNight }) => {
-  const { id, status } = item;
-  const [isComplete, setIsComplete] = useState(status);
+const Item = ({ item, handleDeleteItem, isNight, handleCompleteStatusUpdate }) => {
+  const [isComplete, setIsComplete] = useState(item.status);
   const [isEdited, setIsEdited] = useState(false);
   const [text, setText] = useState(item.text);
 
   const handleDeleteClick = () => {
-    handleDeleteItem(id);
+    handleDeleteItem(item.id);
   };
 
   const handleCheckBox = () => {
     setIsComplete(!isComplete);
+    item.status = !isComplete
+    handleCompleteStatusUpdate(item)
   };
 
   const handleEditClick = () => {
@@ -32,15 +33,16 @@ const Item = ({ item, handleDeleteItem, isNight }) => {
     <li className="task">
       <input
         className="task__complete-btn"
-        name={id}
+        name={item.id}
         value=""
         onChange={handleCheckBox}
         type="checkbox"
+        checked={isComplete ? 'checked' : ''}
       ></input>
       {!isEdited ? (
         <p
           className={`task__text ${
-            !isComplete ? 'task___text_status_complete' : ''
+            isComplete ? 'task___text_status_complete' : ''
           }`}
           onClick={handleEditClick}
         >
