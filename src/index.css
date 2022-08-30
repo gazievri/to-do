@@ -7,9 +7,7 @@
 @import url('./blocks/title-block/__theme-btn/title-block__theme-btn.css');
 @import url('./blocks/new-task/new-task.css');
 @import url('./blocks/new-task/__input/new-task__input.css');
-
 @import url('./blocks/list-tasks/list-tasks.css');
-
 @import url('./blocks/task/task.css');
 @import url('./blocks/task/__delete-btn/task__delete-btn.css');
 @import url('./blocks/task/__edit-btn/task__edit-btn.css');
@@ -17,7 +15,6 @@
 @import url('./blocks/task/__complete-btn/task__complete-btn.css');
 @import url('./blocks/task/__text/_status_complete/task__text_status_complete.css');
 @import url('./blocks/task/__text-edit-input/task__text-edit-input.css');
-
 @import url('./blocks/header/_night-theme_active/header__night-theme_active.css');
 @import url('./blocks/list-tasks/_night-theme_active/list-tasks_night-theme_active.css');
 @import url('./blocks/new-task/__input/_night-theme/new-task__input_night-theme_active.css');

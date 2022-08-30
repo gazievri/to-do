@@ -11,8 +11,8 @@ const Item = ({ item, handleDeleteItem, isNight, handleCompleteStatusUpdate }) =
 
   const handleCheckBox = () => {
     setIsComplete(!isComplete);
-    item.status = !isComplete
-    handleCompleteStatusUpdate(item)
+    item.status = !isComplete;
+    handleCompleteStatusUpdate(item);
   };
 
   const handleEditClick = () => {

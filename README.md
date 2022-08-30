@@ -10,7 +10,7 @@
 - выбор ночной/дневной темы;
 - сохранение списка задач и выбранной темы в LocalStorage.
 
-Наглядно c функционалом проекта **Mesto** можно познакомиться в [видео](https://youtu.be/4qoeCTC6EdE).
+Наглядно c функционалом проекта **To Do List** можно познакомиться в [видео](https://youtu.be/4qoeCTC6EdE).
 <img width="1432" alt="todolist" src="https://user-images.githubusercontent.com/96244317/187025801-3401db08-fed6-4bd8-9d9f-901155483d5b.png">
 
 ## Технологический стек
