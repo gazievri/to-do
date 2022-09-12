@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Title } from '../components/Title';
-import { AddItem } from '../components/AddItem';
+import Title from '../components/Title';
+import AddItem from '../components/AddItem';
 import { ListItems } from '../components/ListItems';
 
 const Main = ({ handleSwitchTheme, isNight }) => {

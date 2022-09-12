@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-import { Header } from './layout/Header';
+import Header from './layout/Header';
 import { Main } from './layout/Main';
 
 function App() {
