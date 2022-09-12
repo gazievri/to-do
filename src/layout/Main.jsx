@@ -27,9 +27,9 @@ const Main = ({ handleSwitchTheme, isNight }) => {
         el.status = item.status;
       };
       return el;
-    })
+    });
     setListItems(newList);
-  }
+  };
 
   // Записывает в LocalStorage обновленный массив с задачами при его изменении. Пустой массив не записывает. 
   useEffect(() => {
