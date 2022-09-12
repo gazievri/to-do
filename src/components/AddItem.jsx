@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 
 const AddItem = ({ handleClickAdd, isNight }) => {
   const [value, setValue] = useState('');
@@ -42,4 +42,4 @@ const AddItem = ({ handleClickAdd, isNight }) => {
     </form>
   );
 };
-export { AddItem };
+export default AddItem;

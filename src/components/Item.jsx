@@ -1,6 +1,11 @@
 import { useState } from 'react';
 
-const Item = ({ item, handleDeleteItem, isNight, handleCompleteStatusUpdate }) => {
+const Item = ({
+  item,
+  handleDeleteItem,
+  isNight,
+  handleCompleteStatusUpdate,
+}) => {
   const [isComplete, setIsComplete] = useState(item.status);
   const [isEdited, setIsEdited] = useState(false);
   const [text, setText] = useState(item.text);

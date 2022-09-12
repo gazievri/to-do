@@ -1,3 +1,5 @@
+import { React } from 'react';
+
 const Title = ({ handleSwitchTheme }) => {
   return (
     <div className="title-block">
@@ -7,4 +9,4 @@ const Title = ({ handleSwitchTheme }) => {
   );
 };
 
-export { Title };
+export default Title;

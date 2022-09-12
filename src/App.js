@@ -1,14 +1,13 @@
-import { useEffect, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { Header } from './layout/Header';
 import { Main } from './layout/Main';
 
 function App() {
-
   // Флаг для ночной темы. Значения флага загружается из LocalStorage или false
   const [isNight, setIsNight] = useState(
     JSON.parse(localStorage.getItem('theme'))
       ? JSON.parse(localStorage.getItem('theme'))
-      : false
+      : false,
   );
 
   // Обработчик клика на переключатель темы
